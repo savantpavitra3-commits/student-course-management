@@ -1,16 +1,54 @@
-# React + Vite
+Student Course Management Frontend Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Project Overview
 
-Currently, two official plugins are available:
+This project is a Student Course Management frontend application developed using React JS. It helps users view student details, add students, and view available courses.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Technologies Used
 
-## React Compiler
+- React JS
+- Vite
+- JavaScript
+- HTML
+- CSS
+- React Router
+- Browser Local Storage
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Features
 
-## Expanding the Oxlint configuration
+- Dashboard displaying student and course information
+- Students page to add and view student details
+- Courses page displaying available courses
+- Form handling and user interaction
+- React state management using "useState()"
+- Side effects using "useEffect()"
+- Context API for sharing data
+- Navigation between pages using React Router
+- Responsive CSS styling
+- Student data saved in browser Local Storage
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+Project Structure
+
+- "src/" — Main application source code
+- "src/components/" — Reusable components, including Navbar and StudentForm
+- "App.jsx" — Main application logic and page routing
+- "App.css" — Application styling
+- "main.jsx" — React application entry point
+- "package.json" — Project dependencies and scripts
+- "README.md" — Project documentation
+
+How to Run the Project
+
+1. Install Node.js.
+2. Open the project folder in a terminal.
+3. Run "npm install".
+4. Run "npm run dev".
+5. Open the local URL displayed in the terminal.
+
+Version Control
+
+The project is uploaded to GitHub. Git is used to track project changes and commits.
+
+Conclusion
+
+This project demonstrates React components, state management, forms, event handling, lists, routing, hooks, Context API, responsive styling, and GitHub version control.
