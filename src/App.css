@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f6fb;
+  color: #1f2937;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.header {
+  background: #243b80;
+  color: white;
+  text-align: center;
+  padding: 30px 16px;
+}
+
+.header h1 {
+  margin: 0 0 10px;
+  font-size: 30px;
+}
+
+.header p {
+  margin: 0;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.summary,
+.form-section,
+.student-section {
+  background: white;
+  padding: 24px;
+  margin-bottom: 24px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.summary h2,
+.form-section h2,
+.student-section h2 {
+  margin-top: 0;
+}
+
+form {
+  display: grid;
+  gap: 12px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 6px;
+  background: #243b80;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #172554;
+}
+
+.student-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.student-card {
+  border: 1px solid #dbe3ef;
+  border-radius: 8px;
+  padding: 16px;
+  background: #f8faff;
+  overflow-wrap: anywhere;
+}
+
+.student-card h3 {
+  margin-top: 0;
+  color: #243b80;
+}
+
+@media (max-width: 600px) {
+  .header h1 {
+    font-size: 23px;
+  }
+
+  .container {
+    padding: 0 12px;
+    margin: 16px auto;
+  }
+
+  .summary,
+  .form-section,
+  .student-section {
+    padding: 16px;
+  }
+}
+.navigation {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.navigation a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  background: #344b91;
+}
+
+.navigation a:hover,
+.navigation a.active {
+  background: #ffffff;
+  color: #243b80;
+}
+
+.navigation a:focus-visible {
+  outline: 3px solid #fbbf24;
+  outline-offset: 3px;
+}
