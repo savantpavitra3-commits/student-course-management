@@ -67,31 +67,14 @@ function Students() {
       <h2>Students</h2>
       <h3>Total Students: {students.length}</h3>
 
-      <form onSubmit={addStudent} className="student-form">
-        <label htmlFor="studentName">Student Name</label>
-        <input
-          id="studentName"
-          type="text"
-          placeholder="Enter student name"
-          value={name}
-          onChange={(event) => setName(event.target.value)}
-        />
-
-        <label htmlFor="studentCourse">Select Course</label>
-        <select
-          id="studentCourse"
-          value={course}
-          onChange={(event) => setCourse(event.target.value)}
-        >
-          {courses.map((item) => (
-            <option key={item.id} value={item.name}>
-              {item.name}
-            </option>
-          ))}
-        </select>
-
-        <button type="submit">Add Student</button>
-      </form>
+      <StudentForm
+        studentName={name}
+        setStudentName={setName}
+        course={course}
+        setCourse={setCourse}
+        courses={courses}
+        onSubmit={addStudent}
+      />
 
       <h3>Student List</h3>
       <div className="student-list">
